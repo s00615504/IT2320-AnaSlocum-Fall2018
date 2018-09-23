@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf?8">
+    <meta name="viewport" content="width=devide?width, initial?scale=1">
+    <head>
+        <title>#ClevelandFACTS</title>
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/tictac.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/myscript.js"></script>
+        <script src="../scripts/tictac.js"></script>
+    </head>
+    <body onload="styleChange()">
+        <header>
+            <img src="../media/CLEFACTSHEADER.png" alt="CLE FACTS Header" class="headerimg">
+        </header>
+        <nav id="nav_menu">
+            <ul><li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Cleveland Places</a>
+            <li><a href="../history/index.html">Cleveland History</a></li></ul>
+        </nav>
+        <main>
+            <p id="p2">Take a break and play a quick game of Tic?Tac?Toe!</p>
+            <div class="tictac" id="tictacContainer">
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="0">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="1">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="2">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="3">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="4">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="5">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="6">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="7">?</div>
+                <div class="tictacCell" onclick="cellClicked(this.id)" id="8">?</div>
+              </div>
+            <div class="winnerinfo" id="winner"></div>
+            <center><button onclick="ResetBoard(); ResetWinner()">Reset</button></center>
+        </main>
+        <section>
+            <p class="pround"><b>Did you Know?</b><br>
+            Cleveland hosted the 2016 Replublican National Convention.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            President James A. Garfield was from the Greater Cleveland Area and is laid to rest here.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            Playhouse cell is the second largest performing arts center in the US.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            Cleveland is the home of Rock and Roll.</p>      
+            </section>
+        <article></article>
+        <footer>
+                <p><button type="button" onclick="news()" id="newsbutton">Get the Latest News!</button></p>
+                <p id="newslines"></p>
+                <p id="foot">Created by Ana Slocum for IT?2320 &copy; 2018</p>
+        </footer>
+    </body>
+</html>
