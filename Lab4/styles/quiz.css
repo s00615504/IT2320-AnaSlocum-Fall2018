@@ -1,0 +1,24 @@
+
+#quiz1{
+margin:auto;}
+
+#quiz2{
+margin:auto;} 
+ 
+.questionText {
+font-size: 1em;}
+
+.option {
+color: gray; 
+padding:0.2em;
+padding-left:1em;
+cursor:pointer;}
+
+.option:hover {
+color: black;}
+
+.ci1{
+color:green;}
+
+.ci2{
+color: red;}

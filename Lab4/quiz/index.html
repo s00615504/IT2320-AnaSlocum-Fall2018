@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf?8">
+    <meta name="viewport" content="width=device?width, initial?scale=1">
+    <head>
+        <title>#ClevelandFACTS</title>
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/quiz.css">
+        <script src="../scripts/jquery.js"></script>
+        <script src="../scripts/controller.js"></script>
+        <script src="../scripts/myscript.js"></script>
+    </head>
+    <body onload="styleChange()">
+        <header>
+            <img src="../media/CLEFACTSHEADER.png" alt="CLE FACTS Header" class="headerimg">
+        </header>
+        <nav id="nav_menu">
+            <ul><li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Cleveland Places</a>
+            <li><a href="../history/index.html">Cleveland History</a></li></ul>
+        </nav>
+        <main>
+            <p id="p2">Take the quiz!</p>
+            <div id="quiz1"></div>
+            <div id="quiz2"></div>
+            <div id="score"></div>
+            <br><br><button onClick="history.go(0)">Start Over!</button>
+        </main>
+        <section>
+            <p class="pround"><b>Did you Know?</b><br>
+            Cleveland hosted the 2016 Replublican National Convention.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            President James A. Garfield was from the Greater Cleveland Area and is laid to rest here.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            Playhouse cell is the second largest performing arts center in the US.</p>
+            <p class="pround"><b>Did you Know?</b><br>
+            Cleveland is the home of Rock and Roll.</p>      
+            </section>
+        <article></article>
+        <footer>
+                <p><button type="button" onclick="news()" id="newsbutton">Get the Latest News!</button></p>
+                <p id="newslines"></p>
+                <p id="foot">Created by Ana Slocum for IT?2320 &copy; 2018</p>
+        </footer>
+    </body>
+</html>
