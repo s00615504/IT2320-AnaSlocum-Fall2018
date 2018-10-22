@@ -1,0 +1,27 @@
+#game {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #b2f5fa;
+}
+
+#container {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: hsl(194, 71%, 74%);
+}
+
+#box {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #251cad;
+}
