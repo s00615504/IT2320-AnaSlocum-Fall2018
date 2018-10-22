@@ -25,3 +25,7 @@
     position: absolute;
     background-color: #251cad;
 }
+
+p {
+    font-size: 1em;
+}

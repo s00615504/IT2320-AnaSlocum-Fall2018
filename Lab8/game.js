@@ -1,3 +1,5 @@
+//game
+
 $(function(){
 
     $("#up").on("click",function(){       
