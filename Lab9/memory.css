@@ -1,0 +1,163 @@
+html {
+	box-sizing: border-box;}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;}
+
+body {
+    background: #ffffff;
+    font-family: Verdana;
+    font-weight: bold;
+	font-size: 16px;}
+
+.game {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;}
+
+h1 {
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgb(58, 214, 27);
+    font-size: 1.5em;
+    padding: 10px;}
+
+.deck {
+	width: 300px;
+	background: rgb(58, 214, 27);
+	padding: 5px;
+	border-radius: 2px;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px 10px;}
+
+.deck .card {
+	height: 60px;
+	width: 60px;
+	margin: 5px;
+	background: rgb(18, 66, 8);
+	font-size: 0;
+	color: rgb(140, 255, 117);
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+
+.deck .card.open {
+	transform: rotateY(0);
+	background: rgb(27, 208, 214);
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;}
+
+.deck .card.show {
+	font-size: 33px;}
+
+.deck .card.match {
+	cursor: default;
+	background: rgb(201, 214, 27);
+	font-size: 33px;
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;}
+
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: rgb(214, 27, 105);}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    background: rgba(18, 66, 8, 0.308);
+	visibility: hidden;
+	opacity: 0;}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;}
+  
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: Verdana;}
+  
+.popup h2 {
+	margin-top: 0;
+	color: rgb(58, 214, 27);
+	font-family: Verdana;}
+
+.popup .message{
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;}
+
+#shuffle {
+	background-color: rgb(18, 66, 8);
+	padding: 0.25em;
+	font-size: 0.75em;
+	margin: 0 auto;
+	width: 100px;
+	font-family: Verdana;
+	color: rgb(140, 255, 117);
+    border-radius: 4px;}
+    
+#again {
+    background-color: rgb(18, 66, 8);
+    padding: 0.25em;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    font-family: Verdana;
+    color: rgb(140, 255, 117);
+    border-radius: 4px;}
+
+@keyframes flipInY {
+    from {transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+        animation-timing-function: ease-in;
+		opacity: 0.5;}
+    50% {transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;}
+	to {transform: perspective(400px);} }
+
+@keyframes pulse {
+	from {transform: scale3d(1, 1, 1); }
+	50% {transform: scale3d(1.25, 1.25, 1.25); }
+	to {transform: scale3d(1.1, 1.1, 1.1); } }
+
+
