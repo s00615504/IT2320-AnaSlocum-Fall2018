@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box; }
+*, *::before, *::after {
+    box-sizing: inherit; }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;}
+body {
+    background: #ffffff;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;}
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+h1 {
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgb(58, 214, 27);
+    font-size: 1.5em;
+    padding: 10px;}
+.deck {
+    width: 300px;
+    min-height: 300px;
+	background: rgb(73, 212, 45);
+	padding: 5px;
+	border-radius: 2px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #2edf28b2;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin: 10px 10px;}
+.deck .card {
+    height: 60px;
+    width: 60px;
+    margin: 2px;
+	background: rgb(18, 66, 8);
+    font-size: 0;
+	color: rgb(140, 255, 117);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;}
+.deck .card.open {
+    transform: rotateY(0) !important;
+	background: rgb(27, 208, 214);
+    cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 0.5s;}
+.deck .card.show {
+    font-size: 35px;}
+.deck .card.match {
+	cursor: default;
+	background: rgb(201, 214, 27);
+	font-size: 33px;
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;}
+.restart {
+    float: right;
+    cursor: pointer;}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-family: Verdana;}
+.popup h2 {
+    margin-top: 0;
+    color: rgb(58, 214, 27);
+    font-family: Verdana;}
+.popup .message{
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;}
+@keyframes flipInY {
+        from {transform: perspective(400px) rotate3d(0, 1, 0, 180deg);
+            animation-timing-function: ease-in;
+            opacity: 0.5;}
+        50% {transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            opacity: 1;}
+        to {transform: perspective(400px);} }
+@keyframes pulse {
+        from {transform: scale3d(1, 1, 1); }
+        50% {transform: scale3d(1.25, 1.25, 1.25); }
+        to {transform: scale3d(1.1, 1.1, 1.1); } }

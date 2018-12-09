@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 9 Matching Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="winnerModal-label">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Congratulations!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>You're a Winner!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="init()"; data-dismiss="modal"> Play Again? <i class="fa fa-repeat"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game">
+        <h1>Memory Game</h1>
+            <div class="shuffle">
+                Shuffle <i class="fa fa-repeat"></i>
+            </div>
+        <ul class="deck"></ul>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
