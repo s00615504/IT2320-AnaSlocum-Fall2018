@@ -1,4 +1,5 @@
 $(function(){
+    
     $("#findPetBtn").on("click", function(){        
         const apiKey = "3970e99d4ffe61a71d7d0bb714fae605";
         var queryParam = [];
