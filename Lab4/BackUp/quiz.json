@@ -1,0 +1,31 @@
+{"questions":[
+    {
+        "question":"Cleveland, Ohio, was founded in ______.",
+        "option1":"1796",
+        "option2":"1972",
+        "option3":"1836",
+        "option4":"2015"
+    },
+    {
+        "question":"Cleveland, Ohio, is named after_______ Cleaveland.",
+        "option1":"Moses",
+        "option2":"Carl",
+        "option3":"Hubert",
+        "option4":"Robert"
+    },
+    {
+        "question":"Cleveland is a city in the state of __________.",
+        "option1":"All of these states!",
+        "option2":"Tennessee",
+        "option3":"Florida",
+        "option4":"Ohio"
+    },
+    {
+        "question":"The first traffic light in Cleveland was installed at __________.",
+        "option1":"Euclid Ave. and E. 105th",
+        "option2":"Broadway Ave. and E. 55th",
+        "option3":"Superior Ave. and Euclid Ave.",
+        "option4":"Chester Ave. and Euclid Ave."
+    }
+]
+}

@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;}
+html {
+	background-color: #C0C0C0;}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+	color: #808080;
+    width: 75%;
+	max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+	position: relative;
+    height: 100%;}
+header {
+    padding: 5px;
+    border-bottom: 3px solid #C0C0C0;
+    background-color: #C0C0C0;}
+.headerimg {
+    padding: 2px;
+    width: 100%;
+}
+#nav_menu {
+    font-size: 1em;
+    background-color: #C0C0C0;
+    float: left;
+    width: 100%;}
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;}
+#nav_menu ul li {
+    float: left;
+    width: 30%;
+    max-width: 300px;}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #C0C0C0;
+    color: white;
+    font-weight: bold;}
+#nav_menu a.current {
+    color: #808080;}
+.pround {
+    border-radius: 10px;
+    border: 1px solid #C0C0C0;
+    padding: 10px;
+    float: right;
+    margin: 5px;
+    width: 100%;
+    max-width: 150px;}
+main p {
+    padding: 10px;}
+main img {
+    width: 50%;
+    max-width: 250px;
+    padding: 10px;}
+.shadowl {
+    box-shadow: 5px 5px 5px 1px #808080;
+    margin: 10px;
+    float: left;}
+.shadowr {
+    box-shadow: 5px 5px 5px 1px #808080;
+    margin: 10px;
+    float: right;}        
+.imgthumb:hover {
+    -ms-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    padding: 10px;
+    width: 75px;}
+.imgthumb {
+    padding: 10px;
+    width: 75px;}
+main {
+    float: left;
+    padding: 5px;
+    width: 70%;}
+section{
+    padding: 10px;
+    float: right;
+    margin: 5px;
+    width: 20%;
+    max-width: 150px;}
+footer {
+    background-image: linear-gradient(#C0C0C0, #808080);
+    clear: both;
+    width: 100%;
+    max-width: 1000px;}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 0.25em 0;}
