@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Final Lab Pt 2 - PetFinder API
+    </title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="pets.js"></script>
+    <script type="text/javascript" src="shelters.js"></script>
+    <script type="text/javascript" src="breeds.js"></script>
+    <script type="text/javascript" src="byShelter.js"></script>
+</head>
+<body>
+    <article>
+        <section id="pets">
+            <div id="petsDemo">
+            <header><b>PetFinder - Find a Pet</b></header><br>
+        
+            Animal:
+                <select id="animal" type="text"> 
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>   
+                </select> <br><br>
+            Breed:
+                <input id="breed" type="text"> <br><br>
+            Size: 
+                <select id="size" type="text"> 
+                    <option value="S">SM</option>
+                    <option value="M">MD</option>
+                    <option value="L">LG</option>
+                    <option value="XL">XL</option>
+                </select> <br><br>
+            Sex:
+                <select id="sex" type="text"> 
+                    <option value="M">M</option>
+                    <option value="F">F</option>    
+                </select><br><br>
+            Location (ZIP): <i>*REQUIRED*</i> 
+                <input id="location" type="number" required> <br><br>
+            Age: 
+                <select id="age" type="text"> 
+                    <option value="Baby">Baby</option>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Senior">Senior</option>    
+                </select><br>
+            <br>
+            <button id="findPetBtn">Find a Pet</button>
+            <br>
+            </div>
+            <div id="petResults"></div> 
+            <br>
+        </section>
+        
+        <section id="shelters"> 
+            <div id="shelterDemo">
+            <header><b>Petfinder - Find a Shelter</b></header><br>
+            Location (ZIP): <i>*REQUIRED*</i> 
+            <input id="locLocation" type="number" required> <br>
+            <br>
+            <button id="findShelterBtn">Find a Shelter</button>
+            </div>
+            <div id="shelterResults"></div> 
+            <br>
+        </section>
+
+        <section id="breeds">
+            <div id="breedsDemo">
+            <header><b>PetFinder - Find a Pet by Breed</b></header><br>
+            
+            Animal:
+                <select id="breedAnimal" type="text"> 
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="small&furry">Small&Furry</option>
+                    <option value="barnyard">BarnYard</option>
+                    <option value="bird">Bird</option>
+                    <option value="horse">Horse</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="reptile">Reptile</option>   
+                </select> <br><br>
+            Breed:
+                <input id="breedBreed" type="text"> <br><br>
+            Location (ZIP):
+                <input id="breedLocation" type="number" required> <br><br>
+            <br>
+            <button id="findBreedBtn">Find a Breed</button>
+            <br>
+            </div>
+            <div id="breedResults"></div> 
+            <br>
+        </section>
+
+        <section id="byShelter">
+                <div id="byShelterDemo">
+                <header><b>PetFinder - Find All Pets by Shelter</b></header><br>
+                
+                ShelterID: (<i>Use Shelter Lookup Above to Find a Shelter ID</i>)
+                    <input id="shelterId" required> <br>
+                    <i>Field is Case Sensitive & Required!</i>    
+                <br>
+                <br>
+                <button id="findbyShelterBtn">Find by Shelter</button>
+                <br>
+                </div>
+                <div id="byShelterResults"></div> 
+                <br>
+            </section>
+        
+
+    </article>
+    <footer>
+    </footer>
+</body>
+</html>

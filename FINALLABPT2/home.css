@@ -1,0 +1,35 @@
+#location:required {
+    background-color: rgb(248, 248, 116);}
+#locLocation:required {
+    background-color: rgb(248, 248, 116);}
+#ShelterId:required {
+    background-color: rgb(248, 248, 116);}
+#breedLocation:required {
+    background-color: rgb(248, 248, 116);}
+#pets {
+    width: 80%;
+    font-size: 1em;
+    background-color: rgb(222, 171, 236);}    
+#petsDemo {
+    background-color: rgb(204, 76, 236) !important;}
+#shelters {
+    width: 80%;
+    font-size: 1em;
+    background-color: rgb(181, 174, 250);}    
+#shelterDemo {
+    background-color: rgb(84, 58, 250) !important;}
+#breeds {
+    width: 80%;
+    font-size: 1em;
+    background-color: rgb(241, 214, 137);}    
+#breedsDemo {
+    background-color: rgb(250, 169, 49) !important;}
+#byShelter {
+    width: 80%;
+    font-size: 1em;
+    background-color: rgb(248, 159, 221);}    
+#byShelterDemo {
+    background-color: rgb(252, 42, 241) !important;}
+li {
+    text-overflow: initial;
+    font-size: 0.75em;}
